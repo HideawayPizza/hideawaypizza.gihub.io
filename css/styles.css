@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e23c49 url('images/bg.jpg');
+}
+
+.container { position: absolute; width: 1024px; height: 768px; z-index: 9; top: 0; left: 0;}
+
+#subcontainer {
+  border-radius: 25px;
+  border: 2px solid black;
+  padding: 40px;
+  background-color: white;
+  width: 50%;
+  margin: 10% auto; }
+
+img {width: 1024px; height: 768px}
+
+.rotating-item { display: none; position: absolute; top: 0; left: 0;}

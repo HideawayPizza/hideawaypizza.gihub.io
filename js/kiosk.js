@@ -1,8 +1,13 @@
 $(window).ready(function() {
 
+  var body = $("body");
+
   var kiosk = {
 
+
+
       init: function() {
+
           var params = this.getParams();
 
           if (params["source"] && params["type"]) {
@@ -33,5 +38,8 @@ $(window).ready(function() {
       }
   };
 
-  kiosk.init();
+
+      kiosk.init();
+
+
 });

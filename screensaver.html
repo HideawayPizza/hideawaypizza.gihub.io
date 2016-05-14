@@ -1,25 +1,34 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Hideaway Pizza - Join Our Team</title>
-<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="js/loop.js"></script> <!-- Links to image loop script -->
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+	 	<meta charset="UTF-8">
+		<title>Hideaway Pizza - Join Our Team</title>
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="js/loop.js"></script>
+		<script type="text/javascript" src="js/kiosk.js"></script>
+		<!-- Latest compiled and minified CSS -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	  <!-- Optional theme -->
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	  <!-- Latest compiled and minified JavaScript -->
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
+	<!--Adds redirect when screen is touched -->
+	<a href="http://hideawaypizzajobs.com/"><div class="container"></div></a>
 
-<!--Adds redirect when screen is touched -->
-<a href="http://hideawaypizzajobs.com/"><div class="container"></div></a>
-
-<div id="rotating-item-wrapper">
-	<img class="rotating-item" src="images/slide1.jpg">
-	<img class="rotating-item" src="images/slide2.jpg">
-	<img class="rotating-item" src="images/slide3.jpg">
-	<img class="rotating-item" src="images/slide4.jpg">
-	<img class="rotating-item" src="images/slide5.jpg">
-</div>
+	<div id="rotating-item-wrapper">
+		<img class="rotating-item" src="images/slide1.jpg">
+		<img class="rotating-item" src="images/slide2.jpg">
+		<img class="rotating-item" src="images/slide3.jpg">
+		<img class="rotating-item" src="images/slide4.jpg">
+		<img class="rotating-item" src="images/slide5.jpg">
+	</div>
 
 </body>
 <script>
@@ -31,7 +40,12 @@
   ga('create', 'UA-11576098-2', 'auto');
   ga('send', 'pageview');
 
-	
+
 </script>
+<div class="modal">
+  <div id="loader">
+
+  </div>
+  <h3 id="loaderMsg" class="text-center">Cooking Something Up...</h3>
+</div>
 </html>
-<div class="modal"><!-- Place at bottom of page --></div>

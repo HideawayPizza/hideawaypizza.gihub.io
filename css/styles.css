@@ -8,13 +8,59 @@ body {
 .container { position: absolute; width: 1024px; height: 768px; z-index: 9; top: 0; left: 0;}
 
 #subcontainer {
-  border-radius: 25px;
-  border: 2px solid black;
-  padding: 40px;
-  background-color: white;
-  width: 50%;
-  margin: 10% auto; }
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 40px;
+    background-color: white;
+    width: 50%;
+    margin: 10% auto;
+}
 
 img {width: 1024px; height: 768px}
 
 .rotating-item { display: none; position: absolute; top: 0; left: 0;}
+
+#loader {
+  width: 50%;
+  margin: 13% auto 5% auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid white;
+  border-right: 16px solid #e23c49;
+  border-bottom: 16px solid white;
+  border-left: 16px solid #e23c49;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loaderMsg {
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
